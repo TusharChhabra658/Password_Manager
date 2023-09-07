@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(72, 72, 72);
+}
+.navbar {
+    /* border: 1px solid white; */
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.navbar a{
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+}
+
+.navbar a:hover{
+    color: rgb(120, 120, 120);
+}
+
+.heading{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    margin: 5rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 3rem;
+    color: aqua;
+}
+
+.heading h2{
+    font-size: 2rem;
+    padding: 2.5rem;   
+}
+
+.yp ,.ap{
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3rem 0rem 0rem 0rem;
+    text-align: center;
+}
+.yp h2{
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+.ap h2{
+    font-size: 2rem;
+    color: greenyellow;
+}
+
+.btn,.dbtn{
+    font-size: 1.5rem;
+    background-color: greenyellow;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 30px; 
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s ;
+    box-shadow: 2px 2px 2px black;
+}
+
+.btn:active{
+    background-color: rgb(145, 215, 41);
+}
+table {
+    border: 3px black;
+    border-collapse: collapse;
+    width: 75vw;
+    background-color: white;
+    margin: 1rem 0rem 1rem 0rem;
+}
+th,td{
+    font-size: 1.5rem;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.cp:hover{
+    filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(150%) contrast(70%);
+}
+
+#del:hover{
+    filter: invert(20%) sepia(50%) saturate(4000%) hue-rotate(360deg) brightness(200%) contrast(90%);
+}
+
+@media screen and (max-width:600px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        max-width: 100vw;
+    }
+
+    .heading,.yp,.ap{
+        max-width: 100vw;
+        justify-content: center;
+        text-align: center;
+    }
+
+    table,tr,th{
+        font-size: 14px;
+        width: 100vw;
+    }
+}
